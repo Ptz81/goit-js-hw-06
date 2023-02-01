@@ -29,22 +29,20 @@
 
 
 const input = document.querySelector('#validation-input');
-
-input.addEventListener('blur', e => {
-
-  // ПЕРЕВІРИТИ, ЯКІ ДАНІ ЗВІДКИ ОТРИМУЄМО, ЇХ ТИП
-  //ЗРОБИТИ ФУНКЦІЮ, В ЯКУ БУДЕМ ПЕРЕДАВАТИ КЛАСИ
-  //
-
-
-  if (e.target.value.length == input.getAttribute('data-length')) {
+ 
+const toogle = function (e) {
+    input.getAttribute('data-length');
+    if (e.target.value.length === Number(input.getAttribute('data-length'))) {
     input.classList.add('valid');
     input.classList.remove('invalid');
   } else {
     input.classList.add('invalid');
     input.classList.remove('valid');
   }
-});
+}
+
+input.addEventListener('blur',toogle)
+
 
 
 
