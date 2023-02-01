@@ -46,17 +46,10 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
+const createElem = images.map(image => {
+  return gallery.insertAdjacentHTML('beforeend', `<li class='item'><img class='image' src=${image.url} width='200' alt='${image.alt}'></img></li>`);
+})
 
-function createElem(){
-  for (const {url, alt} of images) {
-
-gallery.insertAdjacentHTML('beforeend', `<li class='item'><img class='image' src=${url} width='200' alt='${alt}'></img></li>`);
-
-}
-}
-
-
-createElem(images);
 
 gallery.style.display = 'flex';
 gallery.style.flexDirection = 'column';
