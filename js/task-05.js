@@ -8,7 +8,7 @@
 *******
 ЯКЩО ПОРОЖНІЙ РЯДОК МАЄ БУТИ ПОРОЖНЬО
 МАЄ ЗЯВЛЯТИСЬ АНОНІМ
-TREEM - ПРИБИРАЄ ЗАЙВІ ПРОБІЛИ
+TRiM - ПРИБИРАЄ ЗАЙВІ ПРОБІЛИ
 ЯКЩО ЗАПОВНЕНО РЯДОК ПРОБІЛАМИ, ТО МИ ПОВЕРТАЄМО АНОНІМ
 
 
@@ -21,7 +21,7 @@ const nameOutput = document.querySelector('#name-output');
 
 nameInput.addEventListener('input', e => {
   nameOutput.textContent = e.target.value;
-if (e.target.value === '') {
+if (e.target.value === ''||e.target.value === ' ') {
     nameOutput.textContent = 'Anonymous';
-  }
+} 
 })
