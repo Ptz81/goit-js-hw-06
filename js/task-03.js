@@ -46,10 +46,9 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const createElem = images.map(image => {
-  return gallery.insertAdjacentHTML('beforeend', `<li class='item'><img class='image' src=${image.url} width='200' alt='${image.alt}'></img></li>`);
-})
+const createElem = images.map(image => `<li class='item'><img class='image' src=${image.url} width='200' alt='${image.alt}'></img></li>`).join('');
 
+gallery.insertAdjacentHTML('beforeend', createElem)
 
 gallery.style.display = 'flex';
 gallery.style.flexDirection = 'column';
