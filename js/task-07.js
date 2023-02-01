@@ -6,6 +6,11 @@
 <br />
 <span id="text">Abracadabra!</span>
 
+
+**************
+БУДЕ СКАЧОК ПО РОЗМІРУ
+ПРИВЯЗАТИ РОЗМІР ШРИФТА ДО БІГУНКА АБО З ІНТУП ОТРИМАТИ ДЕФОЛТНЕ ЗНАЧЕННЯ І ДОДАТИ У СПАН
+
 */
 
 const input = document.querySelector('#font-size-control');

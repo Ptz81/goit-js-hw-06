@@ -31,17 +31,20 @@
 const input = document.querySelector('#validation-input');
 
 input.addEventListener('blur', e => {
-    if (e.target.value.length == input.getAttribute('data-length')) {
-        input.classList.add('valid');
-        input.classList.remove('invalid');
-    } else {
-        input.classList.add('invalid');
-        input.classList.remove('valid');  
-    }
-    if (e.target.value.length < input.getAttribute('data-length')||e.target.value.length > input.getAttribute('data-length')) {
-        alert('You added wrong quantity of symbols')
-    } 
-}, true);
+
+  // ПЕРЕВІРИТИ, ЯКІ ДАНІ ЗВІДКИ ОТРИМУЄМО, ЇХ ТИП
+  //ЗРОБИТИ ФУНКЦІЮ, В ЯКУ БУДЕМ ПЕРЕДАВАТИ КЛАСИ
+  //
+
+
+  if (e.target.value.length == input.getAttribute('data-length')) {
+    input.classList.add('valid');
+    input.classList.remove('invalid');
+  } else {
+    input.classList.add('invalid');
+    input.classList.remove('valid');
+  }
+});
 
 
 

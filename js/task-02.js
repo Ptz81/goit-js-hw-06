@@ -13,6 +13,15 @@
     - створити порожній масив
     - запушити
     - додати
+
+
+
+***************
+ЗМІНИТИ:
+
+ВИКОРИСТАТИ MAP
+
+
 */
 
 
@@ -28,16 +37,13 @@ const ingredients = [
 const element = document.querySelector('#ingredients');
 console.log(element)
 
-let elemArray = [];
 
-// функція для створення елементів
-
-ingredients.forEach(ingredient => {
+let elemArray = ingredients.map(ingredient => {
   const items = document.createElement('li');
   items.textContent = ingredient;
   items.className = 'item';
-  elemArray.push(items);
   return items;
 })
+
 
 element.append(...elemArray);

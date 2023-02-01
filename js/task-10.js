@@ -27,6 +27,7 @@ function getRandomHexColor() {
 
 */
 const btn = document.querySelectorAll('button');
+//ДОСТУП ПО ДАТА АТРИБУТАМ
 const btnCreate = btn[0];
 const btnDestroy = btn[1];
 const boxElement = document.querySelector('#boxes');
@@ -39,7 +40,7 @@ function getRandomHexColor() {
 
 function createBoxes(amount) {
   const boxArray = [];
-
+// БРАТИ AMOUNT В МОМЕНТ ВИКЛИКУ ФУНКЦІЇ, А НЕ ПЕРЕДАВАТИ ЇЇ ВИЩЕ
   for (let i = 0; i < amount; i++){
     const box = document.createElement('div');
     boxArray.push(box);
@@ -60,6 +61,4 @@ const boxDestroy = () => {
   boxElement.innerHTML = '';
 }
 
-btnDestroy.addEventListener('click', ()=>{
-  boxDestroy.apply();
-})
+btnDestroy.addEventListener('click', boxDestroy);

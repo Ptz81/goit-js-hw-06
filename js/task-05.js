@@ -4,6 +4,14 @@
 
 <input type="text" id="name-input" placeholder="Please enter your name" />
 <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+
+*******
+ЯКЩО ПОРОЖНІЙ РЯДОК МАЄ БУТИ ПОРОЖНЬО
+МАЄ ЗЯВЛЯТИСЬ АНОНІМ
+TREEM - ПРИБИРАЄ ЗАЙВІ ПРОБІЛИ
+ЯКЩО ЗАПОВНЕНО РЯДОК ПРОБІЛАМИ, ТО МИ ПОВЕРТАЄМО АНОНІМ
+
+
 */
 
 
