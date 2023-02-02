@@ -35,14 +35,16 @@ formElement.addEventListener('submit', sendForm);
 
         if (email.value === ''||password.value === ''){
             alert('Warning! Check the fields! Fill in the form');
-        }
-        // ВИВОДИМО В КОНСОЛЬ ЛИШЕ КОЛИ ЗАПОВНЕННІ 2 ПОЛЯ
-        const user = {
+        } else {
+           const user = {
             userEmail: email.value,
             userPassword: password.value,
         }
     
     console.log(user)
+        }
+        
+       
         
         event.currentTarget.reset();
 }
