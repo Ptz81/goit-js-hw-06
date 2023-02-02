@@ -33,7 +33,9 @@ const btnElement = document.querySelector('.change-color');
 
 const colorElement = document.querySelector('span');
 
+
 btnElement.addEventListener('click', () => {
-  body.style.backgroundColor = getRandomHexColor();
-  colorElement.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  body.style.backgroundColor = color;
+  colorElement.textContent = color;
 })
